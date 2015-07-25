@@ -10,6 +10,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+Plugin 'hotoo/pangu'
+
 " Elixir syntax
 " Plugin 'elixir-lang/vim-elixir'
 
@@ -144,7 +146,7 @@ if exists("&undodir")
 endif
 
 " Don’t create backups when editing files in certain directories
-set backupskip=/tmp/*,/private/tmp/*
+set backupskip=/tmp/*
 
 " Respect modeline in files
 set modeline
@@ -243,33 +245,33 @@ autocmd FileType clojure setlocal lispwords+=describe,it,testing,facts,fact,prov
 let g:sexp_enable_insert_mode_mappings = 0"
 
 " basic keymapping
-noremap <leader>c :! compass compile<CR>
+" noremap <leader>c :! compass compile<CR>
 
 " elixir keymapping
-noremap <leader>ed :! mix deps.get<CR>
-noremap <leader>ec :! mix compile<CR>
-noremap <leader>et :! mix test<CR>
-noremap <leader>xt :! mix test<CR>
+" noremap <leader>ed :! mix deps.get<CR>
+" noremap <leader>ec :! mix compile<CR>
+" noremap <leader>et :! mix test<CR>
+" noremap <leader>xt :! mix test<CR>
 
 " clojure keymapping
-noremap <leader>cd :! lein deps<CR>
-noremap <leader>cc :! lein compile<CR>
-noremap <leader>ce :! lein test<CR>
-noremap <leader>ce :Eval<CR>
+" noremap <leader>cd :! lein deps<CR>
+" noremap <leader>cc :! lein compile<CR>
+" noremap <leader>ce :! lein test<CR>
+" noremap <leader>ce :Eval<CR>
 
 " golang keymapping
-noremap <leader>gd :! go get<CR>
-noremap <leader>gc :! make<CR>
-noremap <leader>gt :! make test<CR>
+" noremap <leader>gd :! go get<CR>
+" noremap <leader>gc :! make<CR>
+" noremap <leader>gt :! make test<CR>
 
 " tcl keymapping
 noremap <leader>tt :set noexpandtab<CR>
 
 
 " web page
-noremap <leader>eh :! open http://elixir-lang.org/docs/stable/elixir/<CR>
-noremap <leader>exh :! open http://www.phoenixframework.org/v0.9.0/docs<CR>
-noremap <leader>ehp :! open https://hex.pm<CR>
+" noremap <leader>eh :! open http://elixir-lang.org/docs/stable/elixir/<CR>
+" noremap <leader>exh :! open http://www.phoenixframework.org/v0.9.0/docs<CR>
+" noremap <leader>ehp :! open https://hex.pm<CR>
 
-noremap <leader>gh :! open https://github.com<CR>
+" noremap <leader>gh :! open https://github.com<CR>
 
