@@ -51,17 +51,17 @@ Plugin 'szw/vim-g'
 
 " Plugin 'vim-ruby/vim-ruby'
 
-Plugin 'wlangstroth/vim-racket'
+" Plugin 'wlangstroth/vim-racket'
 
 " Plugin 'fatih/vim-go'
 
-Plugin 'cakebaker/scss-syntax.vim'
+" Plugin 'cakebaker/scss-syntax.vim'
 
-Plugin 'chrisbra/Colorizer'
+" Plugin 'chrisbra/Colorizer'
 
-:let g:colorizer_auto_color = 1
-:let g:colorizer_auto_filetype='less,sass,scss,js,css,html'
-let g:colorizer_syntax = 1
+" :let g:colorizer_auto_color = 1
+" :let g:colorizer_auto_filetype='less,sass,scss,js,css,html'
+" let g:colorizer_syntax = 1
 
 Plugin 'tpope/vim-commentary'
 
@@ -94,32 +94,32 @@ Plugin 'kien/ctrlp.vim'
 " Plugin 'vim-scripts/cscope.vim'
 
 " Elm lang
-Plugin 'lambdatoast/elm.vim'
+" Plugin 'lambdatoast/elm.vim'
 
 " ansible yaml support
 Plugin 'chase/vim-ansible-yaml'
 
 " fireplace for clojure
-Plugin 'tpope/vim-fireplace'
-Plugin 'tpope/vim-classpath'
-Plugin 'tpope/vim-dispatch'
+" Plugin 'tpope/vim-fireplace'
+" Plugin 'tpope/vim-classpath'
+" Plugin 'tpope/vim-dispatch'
 
 " precision editing for s-expression
-Plugin 'guns/vim-sexp'
+" Plugin 'guns/vim-sexp'
 
 " clojure runtime files
-Plugin 'guns/vim-clojure-static'
-Plugin 'guns/vim-clojure-highlight'
-Plugin 'kien/rainbow_parentheses.vim'
+" Plugin 'guns/vim-clojure-static'
+" Plugin 'guns/vim-clojure-highlight'
+" Plugin 'kien/rainbow_parentheses.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 " Use the Solarized Dark theme
-set background=light
-colorscheme solarized
-let g:solarized_termtrans=1
+" set background=light
+" colorscheme solarized
+" let g:solarized_termtrans=1
 
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 set clipboard=unnamed
@@ -227,22 +227,22 @@ au FileType css setl sw=2 sts=2 et
 au FileType elm setl sw=2 sts=2 et
 au FileType go setl sw=2 sts=2 et
 
-set t_Co=256
+" set t_Co=256
 
 " Enable Rainbow Parentheses when dealing with Clojure files
-au FileType clojure RainbowParenthesesActivate
-au Syntax * RainbowParenthesesLoadRound
+" au FileType clojure RainbowParenthesesActivate
+" au Syntax * RainbowParenthesesLoadRound
 
 " This should enable Emacs like indentation
-let g:clojure_fuzzy_indent=1
-let g:clojure_align_multiline_strings = 1
+" let g:clojure_fuzzy_indent=1
+" let g:clojure_align_multiline_strings = 1
 
 " Add some words which should be indented like defn etc: Compojure/compojure-api, midje and schema stuff mostly.
-let g:clojure_fuzzy_indent_patterns=['^GET', '^POST', '^PUT', '^DELETE', '^ANY', '^HEAD', '^PATCH', '^OPTIONS', '^def']
-autocmd FileType clojure setlocal lispwords+=describe,it,testing,facts,fact,provided
+" let g:clojure_fuzzy_indent_patterns=['^GET', '^POST', '^PUT', '^DELETE', '^ANY', '^HEAD', '^PATCH', '^OPTIONS', '^def']
+"  autocmd FileType clojure setlocal lispwords+=describe,it,testing,facts,fact,provided
 
 " Disable some irritating mappings
-let g:sexp_enable_insert_mode_mappings = 0"
+" let g:sexp_enable_insert_mode_mappings = 0"
 
 " basic keymapping
 " noremap <leader>c :! compass compile<CR>
