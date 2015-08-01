@@ -14,6 +14,7 @@ alias p="cd ~/projects"
 alias g="git"
 alias h="history"
 alias j="jobs"
+alias rp="cd ~/repos"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -26,9 +27,9 @@ fi
 alias l="ls -lF ${colorflag}"
 
 # List all files colorized in long format, including dot files
-alias la="ls -lF ${colorflag}"
-
 alias ll="ls -laF ${colorflag}"
+
+alias la="ls -a ${colorflag}"
 
 # List only directories
 alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
@@ -46,6 +47,12 @@ alias week='date +%V'
 # Stopwatch
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
+# My software alias
+alias nexus=$HOME/software/nexus/nexus-2.11.4-01/bin/nexus
+
+alias idea=$HOME/software/ideaIU14.2/bin/idea.sh
+
+alias tk='xinput set-prop 13 "Device Enabled" 0'
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 # alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update'
 
@@ -79,7 +86,7 @@ alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 # unset jscbin;
 
 # Trim new lines and copy to clipboard
-alias c="tr -d '\n' | pbcopy"
+# alias c="tr -d '\n' | pbcopy"
 
 # Recursively delete `.DS_Store` files
 # alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
